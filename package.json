@@ -1,0 +1,32 @@
+{
+  "name": "understanding-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/promise-poller": "^1.7.0",
+    "@types/puppeteer": "^3.0.2",
+    "@types/request-promise-native": "^1.0.17",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jssoup": "0.0.12",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "promise-poller": "^1.9.1",
+    "puppeteer": "^5.3.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.9",
+    "nodemon": "^1.19.4"
+  }
+}
