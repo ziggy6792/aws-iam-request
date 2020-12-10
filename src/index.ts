@@ -4,6 +4,7 @@ import axios from 'axios';
 var https = require('https');
 
 function request(opts: any) {
+  console.log({ opts });
   https
     .request(opts, function (res: any) {
       res.pipe(process.stdout);
