@@ -9,10 +9,9 @@ import { createHttpLink } from 'apollo-link-http';
 import { setContext } from 'apollo-link-context';
 import { Auth } from 'aws-amplify';
 import Connection from './Connection';
-import { AuthOptions } from 'aws-appsync/lib/link/auth-link';
 import { NormalizedCacheObject } from 'apollo-cache-inmemory';
 
-const buildApiClient = (connection: Connection, customHeaders) => {
+const buildApiClient = (connection: Connection, customHeaders: object) => {
   AWS.config.update({
     region: connection.REGION,
     credentials: new AWS.Credentials(connection.AWS_ACCESS_KEY_ID, connection.AWS_SECRET_ACCESS_KEY, connection.AWS_SESSION_TOKEN),
